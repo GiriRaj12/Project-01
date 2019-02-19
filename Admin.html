@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Admin</title>
+<style>
+.header{
+  font-family:sans-serif;;
+  background-color:MediumSeaGreen;
+  box-shadow: 0 0 18px #6699ff;
+  opacity:0.8;
+  padding:5px;
+  }
+  .Company{
+   float:left;
+   text-decoration:none;
+   font-size:30px;
+   margin-left:20px;
+   margin-top:10px;
+  }
+  .list {
+  float:right;
+  }
+ .list a,.Company a{
+  text-decoration:none;
+  color:white;
+  margin-right:10px;
+    }
+  li{
+  display:inline-block;
+  margin-left:10px;
+  margin-right:10px;
+  }
+  .clearfix::after{
+    content:'';
+    display:block;
+    clear:both;
+    }
+.main{
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+.form {
+  position: realtive;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #4CAF50;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+select{
+width:200px;
+padding:10px;
+margin-bottom:10px;
+}
+</style>
+</head>
+     <header>
+    <div class="header clearfix">
+      <div class="Company">
+        <a href="index.html">Organic Store</a>
+      </div>
+      <ul class="list">
+        <li><a>Welcome Admin</a>
+        <li><a href="index.html">Home</a>
+      </ul>
+        </div>
+      </header>
+
+<body>
+<div class="main">
+<div class="form">
+<form action="add" method="post">
+<p style="text-align:center;">ADD Products</p>
+<input type="text" placeholder="Admin Name" name="admin_name">
+<select name="product_name">
+<option value="Apple">Apple</option>
+<option value="Orange">Orange</option>
+<option value="Banana">Banana</option>
+<option value="Kiwi">Kiwi</option>
+<option value="Mango">Mango</option>
+</select>
+<input type="text" placeholder="Quantity" name="quantity">
+<button>Add</button>
+</form>
+</div>
+</div>
+</body>
+</html>

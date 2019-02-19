@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+    <title>Organic Store</title>
+  </head>
+   <style>
+ .header{
+  font-family:sans-serif;;
+  background-color:MediumSeaGreen;
+  box-shadow: 0 0 18px #6699ff;
+  opacity:0.8;
+  padding:5px;
+  }
+  .Company{
+   float:left;
+   text-decoration:none;
+   font-size:30px;
+   margin-left:20px;
+   margin-top:10px;
+  }
+  .list {
+  float:right;
+  }
+ .list a,.Company a{
+  text-decoration:none;
+  color:white;
+  margin-right:10px;
+    }
+  li{
+  display:inline-block;
+  margin-left:10px;
+  margin-right:10px;
+  }
+  .clearfix::after{
+    content:'';
+    display:block;
+    clear:both;
+  }
+  body{
+  background-image:url("http://onehdwallpaper.com/wp-content/uploads/2015/07/Green-Nature-1080p-Wallpapers.jpg");
+  background-size:cover;
+  background-repeat:no-repeat;
+  }
+.body{
+  font-size:45px;
+  color:white;
+}button{
+  background-color: MediumSeaGreen;
+  position:absolute;
+  top:50%;
+  left:50%;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  border: 2px solid MediumSeaGreen;
+}
+.social a {
+float:right;
+margin-top:8px;
+margin-left:40px;
+margin-right:-15px;
+}
+footer{
+width:100%;
+position:absolute;
+top:90%;
+}
+  </style>
+    <header>
+    <div class="header clearfix">
+      <div class="Company">
+        <a href="index.html">Organic Store</a>
+      </div>
+      <nav>
+      <ul class="list">
+        <li><a href="Validate.jsp">Login</a></li>
+        <li><a href="Register.jsp">Register</a></li>
+        <li><a href="Admin.html">Admin</a>
+      </ul>
+      <div class="social">
+        <a href="" style="color:black;font-size:25px;">in</a>
+         <a href="https://www.facebook.com/giri.mass2" style="color:black;font-size:25px;">f</a>
+        </div>
+        </nav>
+        </div>
+      </header>
+    <body>
+    <div class="body">
+     <p align="center" style="margin-top:100px; margin-left:90px;">Welcome to Organic Store<br>
+ Shop the worlds best organic products fresh from farm's</p>
+    </div>
+    <form action="Validate.jsp">
+    <button>Shop Now</button>
+    </form>
+    <footer>
+        <p style="float:left;color:#ffff; font-size:20px">Contact:+12 345678</p><p style="float:right;color:#ffff;font-size:20px">Organic Store</p>
+     </footer>       
+  </body>
+</html>
